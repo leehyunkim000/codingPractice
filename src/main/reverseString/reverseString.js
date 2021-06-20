@@ -3,7 +3,7 @@
  */
 const reverseString = function(s) {
 
-    return helloffadsfasdfasdfg;
+    return "helloffadsfasdfasdfg;"
 };
 
 console.log(reverseString(["h","e","l","l","o"])) // [ 'o', 'l', 'l', 'e', 'h' ]
