@@ -3,7 +3,7 @@
  */
 const sortAnArray = function(nums) {
     // hint : find a method that sorts
-
+    return nums.sort((a,b) => a-b)
 };
 
 console.log(sortAnArray([5,2,3,1])) // [1,2,3,5]
