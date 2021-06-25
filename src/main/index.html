@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Color Change</title>
+    <style>
+      .container{
+        align-items: center;
+      }
+      #button{
+        display: inline-block;
+        background-color: white;
+      }
+    </style>
+</head>
+<body>
+  <div class = "container">
+    <button id = "button">Click me!</button>
+  </div>
+
+  <script>
+    const button = document.querySelector('button')
+    const body = document.querySelector('body')
+    const colors = ['red', 'green', 'blue', 'yellow', 'pink', 'purple']
+
+    body.style.backgroundColor = 'violet'
+    button.addEventListener('click', changeBackground)
+
+    function changeBackground(){
+      const colorIndex= parseInt(Math.random()*colors.length)
+      body.style.backgroundColor = colors[colorIndex]
+    }
+  </script>
+
+</body>
+</html>
